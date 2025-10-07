@@ -48,5 +48,24 @@
     </div>
 
     <div class="add-review-container">
-      <button id="add-yours-btn" class="add-yours-btn">+ ADD YOURS!</button>
+      <button id="add-yours-btn" class="add-yours-btn">ADD YOURS!</button>
+    </div>
+
+    <!-- POP-UP FORM ISI REVIEW -->
+    <div id="review-popup" class="popup hidden">
+      <div class="popup-content">
+        <h2>Tambah Ulasan</h2>
+        <form id="review-form">
+          <label>Nama</label>
+          <input type="text" id="review-name" required>
+
+          <label>Festival yang Diikuti</label>
+          <input type="text" id="review-festival" required>
+
+          <label>Berikan Komentarmu</label>
+          <textarea id="review-comment" required></textarea>
+
+          <button type="submit" id="submit-review-btn">SELESAI</button>
+        </form>
+      </div>
     </div>
