@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivals - Festival Nusantara</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="festivals.html" class="active">FESTIVALS</a></li>
+        <li><a href="review.html">REVIEW</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>FESTIVALS INDONESIA</h1>
+        <p>Cari tau ada festivals apa aja ya di Indonesia?</p>
+      </div>
+    </section>
+
+    <!-- SEARCH BAR -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="🔍 Search" />
+    </section>
+
+    <!-- FILTER BUTTONS PER PULAU -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-region="all">All</button>
+      <button class="filter-btn" data-region="Jawa">Jawa</button>
+      <button class="filter-btn" data-region="Kalimantan">Kalimantan</button>
+      <button class="filter-btn" data-region="Papua">Papua</button>
+      <button class="filter-btn" data-region="Sulawesi">Sulawesi</button>
+      <button class="filter-btn" data-region="Sumatera">Sumatera</button>
+    </div>
+
+    <!-- FESTIVAL CARDS -->
+    <section class="festival-container">
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/bali-arts-festival.jpg" alt="Bali Arts Festival" />
+        <h3>BALI ARTS FESTIVAL</h3>
+        <p>
+          Acara tahunan di Denpasar yang merayakan seni, tari, musik, dan budaya
+          tradisional Bali dalam suasana meriah dan penuh warna.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/bau nyale lombok.jpg" alt="Festival Bau Nyale Lombok" />
+        <h3>FESTIVAL BAU NYALE LOMBOK</h3>
+        <p>
+          Tradisi tahunan di Lombok di mana masyarakat menangkap cacing laut
+          (nyale) yang dipercaya sebagai jelmaan Putri Mandalika, disertai
+          berbagai pertunjukan budaya dan upacara adat.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/budaya dieng.png" alt="Festival Budaya Dieng" />
+        <h3>FESTIVAL BUDAYA DIENG</h3>
+        <p>
+          Acara tahunan di Dataran Tinggi Dieng yang menampilkan ritual
+          pemotongan rambut gimbal, pertunjukan seni tradisional, dan pesta
+          lampion di tengah suasana alam pegunungan.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Kalimantan">
+        <img src="img/cap go meh.jpg" alt="Festival Cap Go Meh Singkawang" />
+        <h3>FESTIVAL CAP GO MEH SINGKAWANG</h3>
+        <p>
+          Perayaan budaya Tionghoa terbesar di Indonesia yang menampilkan
+          atraksi Tatung, arak-arakan, dan ritual keagamaan untuk merayakan
+          akhir Tahun Baru Imlek.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Papua">
+        <img src="img/danau sentani.jpg" alt="Festival Danau Sentani" />
+        <h3>FESTIVAL DANAU SENTANI</h3>
+        <p>
+          Acara tahunan di Papua yang menampilkan tarian tradisional di atas
+          perahu, musik daerah, serta pameran seni dan kerajinan khas masyarakat
+          sekitar Danau Sentani.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/dugderan semarang.jpg" alt="Festival Dugderan Semarang" />
+        <h3>FESTIVAL DUGDERAN SEMARANG</h3>
+        <p>
+          Tradisi khas Semarang yang menandai awal Ramadan, ditandai dengan
+          arak-arakan, tabuhan bedug, dan pesta rakyat yang meriah.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Kalimantan">
+        <img src="img/erau kertanegara.jpg" alt="Festival Erau Kertanegara" />
+        <h3>FESTIVAL ERAU KERTANEGARA</h3>
+        <p>
+          Festival adat di Tenggarong, Kalimantan Timur, yang menampilkan
+          upacara kerajaan Kutai, tari tradisional, dan berbagai atraksi budaya
+          daerah.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Kalimantan">
+        <img src="img/erau kutai.jpg" alt="Festival Erau Kutai" />
+        <h3>FESTIVAL ERAU KUTAI</h3>
+        <p>
+          Perayaan adat Kerajaan Kutai di Tenggarong yang menampilkan prosesi
+          tradisional, tari-tarian, dan berbagai kegiatan budaya khas Kalimantan
+          Timur.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sumatera">
+        <img src="img/festival danau toba.jpg" alt="Festival Danau Toba" />
+        <h3>FESTIVAL DANAU TOBA</h3>
+        <p>
+          Acara tahunan di Sumatera Utara yang menampilkan seni, musik, olahraga
+          air, dan budaya Batak dengan latar keindahan Danau Toba.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/gandrung sewu.jpg" alt="Festival Gandrung Sewu" />
+        <h3>FESTIVAL GANDRUNG SEWU</h3>
+        <p>
+          Pertunjukan kolosal di Banyuwangi yang menampilkan ribuan penari
+          Gandrung sebagai simbol keramahtamahan dan kekayaan budaya daerah.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/jazz gunung bromo.jpg" alt="Festival Jazz Gunung Bromo" />
+        <h3>FESTIVAL JAZZ GUNUNG BROMO</h3>
+        <p>
+          Acara musik jazz tahunan yang diselenggarakan di kawasan alam Bromo,
+          Jawa Timur — perpaduan antara pertunjukan jazz dan suasana alam
+          pegunungan yang magis.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img
+          src="img/jember fashion carnaval.jpg"
+          alt="Jember Fashion Carnaval"
+        />
+        <h3>JEMBER FASHION CARNAVAL</h3>
+        <p>
+          Festival fashion dan karnaval tahunan di Kabupaten Jember, Jawa Timur,
+          yang menampilkan parade kostum spektakuler penuh warna dan
+          kreatifitas.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sumatera">
+        <img src="img/krakatau.png" alt="Festival Krakatau" />
+        <h3>FESTIVAL KRAKATAU</h3>
+        <p>
+          Acara tahunan di Lampung yang menampilkan karnaval budaya, kuliner
+          khas, dan pertunjukan seni, serta menjadi ajang promosi wisata Gunung
+          Krakatau dan kekayaan budaya Lampung.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/laut pangandaran.jpg" alt="Festival Laut Pangandaran" />
+        <h3>FESTIVAL LAUT PANGANDARAN</h3>
+        <p>
+          Tradisi tahunan di Pangandaran, Jawa Barat, yang digelar oleh
+          masyarakat nelayan sebagai bentuk ucapan syukur atas hasil laut dan
+          keselamatan.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Papua">
+        <img src="img/lembah baliem.png" alt="Festival Lembah Baliem" />
+        <h3>FESTIVAL LEMBAH BALIEM</h3>
+        <p>
+          Acara tahunan di Wamena, Papua, yang menampilkan perang adat, tarian
+          tradisional, dan budaya suku-suku pegunungan sebagai simbol persatuan
+          dan perdamaian.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/pasola sumba.jpg" alt="Festival Pasola Sumba" />
+        <h3>FESTIVAL PASOLA SUMBA</h3>
+        <p>
+          Tradisi adat tahunan di Pulau Sumba, Nusa Tenggara Timur, yang
+          menggabungkan unsur ritual, olahraga, dan budaya.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/payung indonesia.jpg" alt="Festival Payung Indonesia" />
+        <h3>FESTIVAL PAYUNG INDONESIA</h3>
+        <p>
+          Festival tahunan di Solo yang mengangkat payung sebagai medium
+          ekspresi budaya, memadukan seni pertunjukan, fashion, wastra
+          tradisional, dan kerajinan kreatif.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/sapi madura.jpg" alt="Festival Karapan Sapi" />
+        <h3>FESTIVAL KARAPAN SAPI</h3>
+        <p>
+          Tradisi pacuan sapi tahunan dari Madura, Jawa Timur, di mana sepasang
+          sapi menarik kereta kayu dan dipacu sejauh sekitar 100-120 meter dalam
+          lintasan terbuka.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/sekaten jogja.jpg" alt="Festival Sekaten Jogja" />
+        <h3>FESTIVAL SEKATEN JOGJA</h3>
+        <p>
+          Tradisi tahunan selama ± seminggu di Jogja yang dirayakan untuk
+          memperingati Maulid Nabi Muhammad SAW, dengan rangkaian acara seperti
+          gamelan Sekaten, pasar malam, kuliner khas, dan festival budaya.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sumatera">
+        <img src="img/tabuik pariaman.jpg" alt="Festival Tabuik Pariaman" />
+        <h3>FESTIVAL TABUIK PARIAMAN</h3>
+        <p>
+          Tradisi tahunan di Sumatera Barat yang memperingati Asyura melalui
+          arak-arakan tabuik ke Pantai Gandoriah, diiringi musik tassa dan
+          tari-tarian.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sulawesi">
+        <img src="img/teluk kendar.jpg" alt="Festival Teluk Kendari" />
+        <h3>FESTIVAL TELUK KENDARI</h3>
+        <p>
+          Acara tahunan di Sulawesi Tenggara yang menampilkan budaya lokal,
+          kuliner khas, pertunjukan seni, dan berbagai atraksi wisata di
+          sepanjang kawasan Teluk Kendari.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Kalimantan">
+        <img src="img/isen mulang.jpeg" alt="Festival Isen Mulang" />
+        <h3>FESTIVAL ISEN MULANG</h3>
+        <p>
+          Acara tahunan di Palangka Raya, Kalimantan Tengah, yang menampilkan
+          tarian tradisional, musik khas Dayak, pameran kerajinan, serta
+          berbagai atraksi budaya lokal.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/topeng malang.jpg" alt="Festival Topeng Malang" />
+        <h3>FESTIVAL TOPENG MALANG</h3>
+        <p>
+          Acara tahunan di Kampung Budaya Polowijen, Kota Malang, yang
+          menampilkan tari topeng, kerajinan tangan, pameran budaya, dan
+          berbagai kegiatan seni tradisional.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sulawesi">
+        <img src="img/teluk tomini.jpg" alt="Festival Teluk Tomini" />
+        <h3>FESTIVAL TELUK TOMINI</h3>
+        <p>
+          Acara tahunan di Sulawesi Tengah yang menampilkan budaya lokal,
+          pertunjukan seni, kuliner khas, pameran kerajinan, dan berbagai
+          atraksi wisata di sepanjang kawasan Teluk Tomini.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/morotai.jpg" alt="Festival Morotai" />
+        <h3>FESTIVAL MOROTAI</h3>
+        <p>
+          Perayaan tahunan yang digelar di Pulau Morotai, Maluku Utara, yang
+          memadukan budaya lokal, olahraga, dan pariwisata bahari.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/sisingaan.jpeg" alt="Festival Sisingaan" />
+        <h3>FESTIVAL SISINGAAN</h3>
+        <p>
+          Tradisi tahunan di Subang, Jawa Barat, yang menampilkan arak-arakan
+          miniatur singa, diiringi musik tradisional, tarian, dan upacara adat
+          sebagai simbol perayaan dan penyambutan.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Sumatera">
+        <img src="img/tabot.jpg" alt="Festival Tabot" />
+        <h3>FESTIVAL TABOT</h3>
+        <p>
+          Tradisi tahunan di Bengkulu yang memperingati Asyura dengan
+          arak-arakan replika makam Imam Husain, diiringi musik tradisional dan
+          ritual keagamaan masyarakat setempat.
+        </p>
+      </div>
+
+      <div class="festival-card" data-region="Jawa">
+        <img src="img/likurai.jpg" alt="Festival Likurai" />
+        <h3>FESTIVAL LIKURAI</h3>
+        <p>
+          Tradisi tahunan di Belu, Nusa Tenggara Timur, yang menampilkan tarian
+          perang adat dengan sorak-sorai, musik, dan ritual sebagai simbol
+          keberanian dan persatuan masyarakat setempat.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT & CONTACT US -->
+    <section class="info-container">
+      <div class="info" id="about">
+        <h3>ABOUT</h3>
+        <p>
+          Website ini dibuat untuk memperkenalkan festival-festival yang ada
+          dari Sabang - Merauke, dimana kalian bisa langsung daftar untuk
+          mengikuti festival tersebut!
+        </p>
+      </div>
+      <div class="info" id="contact">
+        <h3>CONTACT US</h3>
+        <p>
+          Email : festivalindonesia@gmail.com<br />
+          Instagram : @festivalindonesia<br />
+          No. Telp : +62 874-6473-8473
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Festival Nusantara | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+    <!-- POP-UP FESTIVAL -->
+    <div id="festival-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <img id="popup-img" src="" alt="" />
+        <h3 id="popup-title"></h3>
+        <p id="popup-desc"></p>
+        <button id="open-register">Daftar</button>
+      </div>
+    </div>
+
+    <!-- POP-UP FORM PENDAFTARAN FESTIVALS -->
+    <div id="register-popup" class="popup-overlay">
+      <div class="popup-box">
+        <h2>Pendaftaran Festival</h2>
+        <form id="register-form">
+          <div>
+            <label>Nama Festival</label>
+            <input type="text" id="festival-name" readonly />
+          </div>
+
+          <div>
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required />
+          </div>
+
+          <div>
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+
+          <div>
+            <label>Jumlah Tiket</label>
+            <select name="jumlah" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Catatan Pemesanan</label>
+            <textarea name="catatan"></textarea>
+          </div>
+
+          <button type="submit">KIRIM</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- POP-UP SUCCESS ISI FORM PENDAFTARAN -->
+    <div id="success-popup" class="popup hidden">
+      <div class="success-message">
+        <h3>Terimakasih telah mendaftar festival ini!</h3>
+        <button id="home-btn">HOME</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Festival Nusantara | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
