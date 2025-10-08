@@ -158,7 +158,7 @@ html {
 }
 
 /* ADD YOURS BUTTON */
-.add-review-btn {
+.add-yours-btn {
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -179,12 +179,12 @@ html {
   z-index: 999;
 }
 
-.add-review-btn:hover {
+.add-yours-btn:hover {
   background-color: #1E5C8B;
   transform: translateX(-50%) scale(1.05);
 }
 
-.add-review-btn i {
+.add-yours-btn i {
   font-size: 18px;
 }
 
@@ -799,23 +799,30 @@ html {
 /* ABOUT & CONTACT US */
 .info-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   background: #5b9bd5;
-  padding: 40px 20px;
+  padding: 40px 60px;
   color: white;
   flex-wrap: wrap;
 }
+
 .info {
-  width: 45%;
-  margin: 10px;
+  flex: 1;
+  min-width: 280px;
+  margin: 10px 20px;
 }
+
 .info h3 {
   margin-bottom: 10px;
   font-size: 1.3rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
+
 .info p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* FOOTER */
@@ -897,6 +904,14 @@ footer {
 
   .navbar ul li {
     margin: 10px 0;
+  }
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .info {
+    margin: 15px 0;
   }
 }
 
